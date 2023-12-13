@@ -56,7 +56,7 @@ therefore adding an ignore comment -->
                 <div class="card-title center">{{ project.name }}</div>
                 <div btf-markdown="project.desc" class="markdown"></div>
               </div>
-              <div ng-show="project.mentors.length>0" class="card-action"> <span ng-repeat="mentor in project.mentors | limitTo:4"><a ng-href="https://github.com/{{mentor}}" class="mentors-github-id" target="_blank">{{ mentor }}</a></span> </div>
+              <div ng-show="project.mentors.length>0" class="card-action"> <span ng-repeat="mentor in project.mentors | limitTo:4"><a ng-href="https://github.com/{{mentor.github_handle}}" class="mentors-github-id" target="_blank">{{ mentor.name }}</a></span> </div>
               <div ng-show="project.difficulty.length>0" class="project-overview-element clickable card-action"> <span ng-click="search(project.difficulty)" class="pr-element-detail chip">{{ project.difficulty }}</span>
                 <span ng-show="project.size.length>0" ng-click="search(project.size)" class="pr-element-detail chip">{{ project.size }}</span>  <br> </div>
               <div ng-show="project.initiatives.length>0" class="project-overview-element clickable card-action"> <span ng-click="search(initiative)" class="pr-element-detail chip" ng-repeat="initiative in project.initiatives">{{ initiative }}</span>
@@ -106,8 +106,18 @@ therefore adding an ignore comment -->
         <div ng-show="currentProject.mentors.length>0" class="project-detail-element">
           <div class="small-heading uppercase">Mentors</div>
             <span class="pr-element-detail chip" ng-repeat="mentor in currentProject.mentors">
-              <a ng-href="https://github.com/{{mentor}}" class="mentors-github-id chip" target="_blank">@{{ mentor }}</a>
+              <a ng-href="https://github.com/{{mentor.github_handle}}" class="mentors-github-id chip" target="_blank">@{{ mentor.name }}</a>
             </span>
+        </div>
+        <div ng-show="currentProject.mentors.length>0" class="project-detail-element">
+          <div class="small-heading uppercase">Contact Mentors</div>
+          <span class="pr-element-detail chip" ng-repeat="mentor in currentProject.mentors">
+            <a ng-href="https://github.com/{{mentor.github_handle}}" class="mentors-github-id chip" target="_blank">@{{ mentor.name }}</a>
+            <a ng-if="mentor.email" ng-href="mailto:{{mentor.email}}" class="mentors-contact" target="_blank"><i class="fa-solid fa-envelope" style="color:#555555"></i></a>&nbsp;
+            <div ng-if="mentor.other_chat_options" ng-repeat="chat in mentor.other_chat_options" style="display: inline-block;">
+              <a ng-if="chat" ng-href="{{chat}}" class="mentor-contact" target="_blank"><i class="fa-solid fa-comment" style="color:#555555"></i></a>
+            </div>
+          </span>
         </div>
         <div ng-show="currentProject.developers_involved.length>0" class="project-detail-element">
         <div class="small-heading uppercase">Developers Involved</div> <span class="pr-element-detail chip" ng-repeat="developers in currentProject.developers_involved"><a ng-href="https://github.com/{{developers}}" class="developers-github-id" target="_blank">@{{developers}}</a></span> </div>

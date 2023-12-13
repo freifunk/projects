@@ -1431,8 +1431,8 @@
   background-color: #ffeb3b !important;
 }
 
-.yellow-text {
-  color: #ffeb3b !important;
+.black-text {
+  color: #000000 !important;
 }
 
 .yellow.lighten-5 {
@@ -5498,11 +5498,11 @@ button.btn-floating {
   height: 32px;
   font-size: 13px;
   font-weight: 500;
-  color: rgba(0, 0, 0, 0.6);
+  color: #555555;
   line-height: 32px;
   padding: 0 12px;
   border-radius: 16px;
-  background-color: #e4e4e4;
+  background-color: #ffb400;
   margin-bottom: 5px;
   margin-right: 5px;
 }
@@ -5543,7 +5543,7 @@ button.btn-floating {
 }
 
 .chips .chip.selected {
-  background-color: #424242;
+  background-color: #009ee0;
   color: #fff;
 }
 

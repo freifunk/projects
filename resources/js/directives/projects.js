@@ -2,7 +2,7 @@ angular.module('coala')
     .directive('projects', ['$http', '$timeout', '$location', 'Languages', 'orderByFilter', function ($http, $timeout, $location, Languages, orderBy) {
         return {
             restrict: 'E',
-            templateUrl: '/partials/tabs/projects.html',
+            templateUrl: baseUrl+'/partials/tabs/projects.html',
             controller: function ($scope, $location, Languages) {
                 self = this
 
@@ -288,7 +288,7 @@ angular.module('coala')
                 function generateMarkdown() {
 
                     function setFromDefault() {
-                        $http.get($scope.currentProject.content_url)
+                        $http.get(baseUrl + $scope.currentProject.content_url)
                             .then(function (res) {
                                 $scope.currentProject.content = res.data
                             }, function () {

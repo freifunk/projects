@@ -20,7 +20,7 @@ main .container {
     margin-left: -12.5%;
 }
 .error .message {
-    color: #004D40;
+    color: #dc0067;
     display: block;
     font-size: 4.5vw;
     font-weight: bold;

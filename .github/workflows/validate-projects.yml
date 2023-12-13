@@ -1,0 +1,32 @@
+---
+name: Validate yaml files
+
+on:
+  - push
+  - pull_request
+
+permissions:
+  contents: read
+  pull-requests: write # enable write permissions for pull request comments
+
+jobs:
+  validate-yaml:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: get go-yq
+        run: |
+          wget https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64 -O yq
+          chmod +x yq
+      - name: extract front matter
+        run: |
+          find ./_projects -name  "*.md" -exec bash -c "./yq --front-matter=extract {} > {}.yaml " \;
+      - name: json-yaml-validate
+        id: json-yaml-validate
+        uses: GrantBirki/json-yaml-validate@v2.4.0
+        with:
+          comment: true
+          json_schema: ./_projects/schema.json
+          json_exclude_regex: ".*(_template\\.md\\.yaml|schema\\.json)$"
+          base_dir: "./_projects"
+          yaml_as_json: true

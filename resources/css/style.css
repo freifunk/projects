@@ -114,10 +114,11 @@
   text-align: justify;
 }
 nav {
-  background-color: #37474f;
+  background-color: #dc0067;
+  font-weight: bold;
 }
 .nav-logo {
-  width: 50px;
+  width: 80px;
 }
 .project-detail-element > .clickable:hover, .clickable:hover .chip:hover {
   background-color: #f3f5f8;
@@ -132,6 +133,12 @@ nav {
 }
 .report .card .card-content {
   padding: 12px;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  color: #dc0067;
+  font-weight: bolder;
 }
 .report .link {
   padding: 0.5em;

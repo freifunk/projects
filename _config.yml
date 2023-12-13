@@ -4,8 +4,8 @@ license:
   short_form: GNU AGPL v3.0
 organization: freifunk.net
 description: A website that showcases interesting projects, using Angular JS.
-baseurl: ""  # the subpath of your site, e.g. /blog
-url: "https://projects.freifunk.net"  # the base hostname & protocol for your site
+baseurl: "/freifunk-projects"  # the subpath of your site, e.g. /blog
+url: "https://ayushmanwebdeveloper.github.io"  # the base hostname & protocol for your site
 githuburl: "https://github.com/freifunk/projects.freifunk.net-contents"
 
 chat:

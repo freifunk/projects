@@ -276,7 +276,7 @@ span.caret {
 footer.page-footer {
   margin-top: 20px;
   padding-top: 20px;
-  background-color: #37474f;
+  background-color: #555555;
 }
 
 .footer-btn-row {
@@ -301,7 +301,7 @@ footer.page-footer .footer-copyright {
   overflow: hidden;
   height: 50px;
   line-height: 50px;
-  background-color: #263238;
+  background-color: #dc0067;
 }
 
 .footer-light .footer-title{
@@ -313,6 +313,8 @@ footer.page-footer .footer-copyright {
 
 .page-footer li {
   padding: 0.2em;
+  background-color: #555555;
+  font-weight: bold;
 }
 
 body {
@@ -415,12 +417,12 @@ a.chip i {
 }
 
 .user .empty {
-  background-color: #eceff1;
+  background-color: #555555;
   height: 5em;
 }
 
 .user .data {
-  background-color: #263238;
+  background-color: #ffffff;
   color: white;
   height: 300px;
   padding: 10px;
@@ -496,7 +498,7 @@ a.chip i {
 
 .outline .card-action span a {
   font-size: 1.2em;
-  color: darkcyan!important;
+  color: #555555!important;
   text-transform: none!important;
   font-family: 'Roboto Mono',menlo,monospace;
 }
@@ -517,7 +519,6 @@ a.chip i {
   font-size: 2em;
   border: none;
   font-family: Roboto;
-  font-weight: 500;
   color: black;
   box-shadow: none;
 }
@@ -577,12 +578,12 @@ a.chip i {
 }
 
 .theatre .dashboard {
-  background-color: darkslategrey;
+  background-color: white;
   width: 70%;
 }
 
 .theatre .profile {
-  background-color: #000;
+  background-color: #6e6e6e;
   color: #fff;
   width: 30%;
 }
@@ -606,7 +607,7 @@ a.chip i {
 }
 
 .theatre .description {
-  color: lightgrey;
+  color: rgb(0, 0, 0);
   text-align: justify;
   font-size: 1.1em;
   font-family: Roboto;
@@ -657,13 +658,13 @@ a.chip i {
 .theatre .description h4 {
   font-size: 1.1em;
   letter-spacing: 0.1em;
-  color: wheat;
+  color: #dc0067;
   text-transform: uppercase;
 }
 
 .theatre .description h5 {
   letter-spacing: 0.1em;
-  color: wheat;
+  color: #dc0067;
   font-size: 1em;
 }
 
@@ -700,7 +701,7 @@ a.chip i {
 }
 
 .theatre .description a {
-  color: azure;
+  color: #dc0067;
 }
 
 .theatre .dashboard span {

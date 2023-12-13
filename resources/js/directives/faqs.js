@@ -2,12 +2,12 @@ angular.module('coala')
     .directive('faq', ['$http', '$templateCache', function ($http, $templateCache, Languages) {
         return {
             restrict: 'E',
-            templateUrl: '/partials/tabs/faq.html',
+            templateUrl: baseUrl+'/partials/tabs/faq.html',
             controller: function ($scope, Languages) {
                 $scope.lang = Languages.getData();
 
                 $scope.getDefaultFAQMetadata = function () {
-                    $http.get('data/faq.liquid')
+                    $http.get(baseUrl + '/data/faq.liquid')
                         .then(function (res) {
                             $scope.faqs = res.data;
                             $scope.generateMarkdown();
@@ -68,7 +68,7 @@ angular.module('coala')
                         })
                     } else {
                         $scope.faqs.forEach(function (f, k) {
-                            $http.get($scope.faqs[k].url)
+                            $http.get(baseUrl + $scope.faqs[k].url)
                                 .then(function (res) {
                                     $scope.faqs[k].answer = res.data
                                 });

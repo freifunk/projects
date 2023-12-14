@@ -19,9 +19,9 @@ mentors:
 - name: andibraeu
   contact:
     github: andibraeu
-    email: "example@example.com"
+    email: "freifunk@andi95.de"
     other_chat_options:
-    - https://matrix.com
+    - https://matrix.to/#/@andibraeu:bau-ha.us
 requirements:
   - "html"
   - "lua"

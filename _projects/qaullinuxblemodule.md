@@ -17,9 +17,8 @@ mentors:
 - name: MathJud
   contact:
     github: MathJud
-    email: "example@example.com"
+    email:
     other_chat_options:
-    - https://matrix.com
 requirements:
   - "Rust"
   - BLE

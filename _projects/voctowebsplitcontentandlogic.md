@@ -18,15 +18,13 @@ mentors:
 - name: andibraeu
   contact:
     github: andibraeu
-    email: "example@example.com"
+    email:
     other_chat_options:
-    - https://matrix.com
 - name: christian-draeger
   contact:
     github: christian-draeger
-    email: "example@example.com"
+    email:
     other_chat_options:
-    - https://matrix.com
 name: "VocToWeb: Split contents and logic"
 requirements:
   - "Analyzing and coding"

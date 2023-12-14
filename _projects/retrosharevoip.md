@@ -15,9 +15,8 @@ mentors:
 - name: csoler
   contact:
     github: csoler
-    email: "example@example.com"
+    email:
     other_chat_options:
-    - https://matrix.com
 name: "RetroShare Improve VOIP"
 requirements:
   - "Analyzing and coding"

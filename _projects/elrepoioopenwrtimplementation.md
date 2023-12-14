@@ -7,15 +7,13 @@ mentors:
 - name: nicoechaniz
   contact:
     github: nicoechaniz
-    email: "example@example.com"
+    email:
     other_chat_options:
-    - https://matrix.com
 - name: G10h4ck
   contact:
     github: G10h4ck
-    email: "example@example.com"
+    email:
     other_chat_options:
-    - https://matrix.com
 initiatives:
  - GSoC
  - GSoC2023

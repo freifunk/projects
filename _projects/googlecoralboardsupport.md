@@ -17,9 +17,8 @@ mentors:
 - name: schuza
   contact:
     github: schuza
-    email: "example@example.com"
+    email:
     other_chat_options:
-    - https://matrix.com
 requirements:
   - "Ansi C"
   - "Ansi C++"

@@ -15,9 +15,8 @@ mentors:
 - name: zoobab
   contact:
     github: zoobab
-    email: "example@example.com"
+    email:
     other_chat_options:
-    - https://matrix.com
 name: "OpenWrt PPA Part 2"
 requirements:
   - "Kubernetes"

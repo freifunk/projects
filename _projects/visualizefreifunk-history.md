@@ -19,9 +19,8 @@ mentors:
 - name: andibraeu
   contact:
     github: andibraeu
-    email: "example@example.com"
+    email:
     other_chat_options:
-    - https://matrix.com
 name: "Visualize freifunk community data and history"
 requirements:
   - "Analyzing and coding"

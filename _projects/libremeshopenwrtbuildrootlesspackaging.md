@@ -14,9 +14,8 @@ mentors:
 - name: spiccinini
   contact:
     github: spiccinini
-    email: "example@example.com"
+    email:
     other_chat_options:
-    - https://matrix.com
 name: "LiMe OpenWrt build-root-less package generator"
 requirements:
   - "Shell programming"

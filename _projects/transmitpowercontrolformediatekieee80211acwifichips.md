@@ -17,9 +17,8 @@ mentors:
 - name: thuehn
   contact:
     github: thuehn
-    email: "example@example.com"
+    email:
     other_chat_options:
-    - https://matrix.com
 requirements:
   - "Ansi C"
 tags:

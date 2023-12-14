@@ -19,15 +19,13 @@ mentors:
 - name: digitigrafo
   contact:
     github: digitigrafo
-    email: "example@example.com"
+    email:
     other_chat_options:
-    - https://matrix.com
 - name: ilario
   contact:
     github: ilario
-    email: "example@example.com"
+    email:
     other_chat_options:
-    - https://matrix.com
 initiatives:
  - GSoC
  - GSoC2023

@@ -13,15 +13,13 @@ mentors:
 - name: thuehn
   contact:
     github: thuehn
-    email: "example@example.com"
+    email:
     other_chat_options:
-    - https://matrix.com
 - name: schuza
   contact:
     github: schuza
-    email: "example@example.com"
+    email:
     other_chat_options:
-    - https://matrix.com
 initiatives:
  - GSoC
  - GSoC2023

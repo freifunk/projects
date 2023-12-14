@@ -49,6 +49,7 @@
             "type": "array",
             "items": {
                 "type": "object",
+                "minProperties": 1,
                 "properties": {
                     "name": {
                         "type": "string"
@@ -68,12 +69,7 @@
                                     "type": "string"
                                 }
                             }
-                        },
-                        "required": [
-                            "github",
-                            "email",
-                            "other_chat_options"
-                        ]
+                        }
                     }
                 },
                 "required": [

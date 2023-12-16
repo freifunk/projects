@@ -40,7 +40,7 @@ angular.module('coala')
         }
 
         $scope.sortProjects = function () {
-            $scope.projectList = orderBy($scope.projectList, 'mapped_status');
+            $scope.projectList = orderByFilter($scope.projectList, 'mapped_status');
         }
 
         $scope.getFiltersMetadata = function () {
@@ -422,4 +422,3 @@ angular.module('coala')
 
         $scope.getAllFilters();
     });
-

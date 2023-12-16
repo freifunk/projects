@@ -1,29 +1,29 @@
-(function(){
-    var app = angular.module('coala', ['ngSanitize','btford.markdown', 'ngRoute']);
+(function () {
+    var app = angular.module('coala', ['ngSanitize', 'btford.markdown', 'ngRoute']);
 
     app.factory('Languages', function ($location) {
         langs = [{
-            'name' : 'English',
-            'code' : 'en'
+            'name': 'English',
+            'code': 'en'
         },
         {
-            'name' : 'Bahasa',
-            'code' : 'id'
+            'name': 'Bahasa',
+            'code': 'id'
         },
         {
-            'name' : 'हिन्दी',
-            'code' : 'hi'
+            'name': 'हिन्दी',
+            'code': 'hi'
         },
         {
-            'name' : 'Romanian',
-            'code' : 'ro'
+            'name': 'Romanian',
+            'code': 'ro'
         }];
         selected_language = JSON.parse(window.localStorage.getItem('lang')) || langs[0];
 
         return {
             setData: function (val) {
-                angular.forEach(langs, function(v, k){
-                    if (v.code == val){
+                angular.forEach(langs, function (v, k) {
+                    if (v.code == val) {
                         window.localStorage.setItem('lang', JSON.stringify(v));
                         selected_language = v;
                     }
@@ -43,25 +43,29 @@
     });
 
     app.config(['$routeProvider',
-        function($routeProvider) {
+        function ($routeProvider) {
             $routeProvider.
-            when('/projects', {
-                template: '<projects></projects>',
-                reloadOnSearch: false
-            }).
-            when('/mentors', {
-                template: '<mentors></mentors>'
-            }).
-            when('/faq', {
-                template: '<faq></faq>'
-            }).
-            when('/students', {
-                template: '<students></students>'
-            }).
-            otherwise({
-                redirectTo: '/projects'
-            });
-    }]);
+                when('/projects', {
+                    template: '<projects></projects>',
+                    reloadOnSearch: false
+                }).
+                when('/mentors', {
+                    template: '<mentors></mentors>'
+                }).
+                when('/completed', {
+                    templateUrl: baseUrl + '/partials/tabs/completed.html',
+                    controller: 'ProjectController'
+                }).
+                when('/faq', {
+                    template: '<faq></faq>'
+                }).
+                when('/students', {
+                    template: '<students></students>'
+                }).
+                otherwise({
+                    redirectTo: '/projects'
+                });
+        }]);
 
     app.controller('LanguageController', function ($scope, Languages) {
         $scope.langs = Languages.getAllLanguages();
@@ -71,7 +75,7 @@
         $scope.init_language = Languages.getLanguageObject();
         $scope.getLanguage = function () {
             $scope.init_language = Languages.getLanguageObject();
-            $(document).ready(function(){
+            $(document).ready(function () {
                 $('select').material_select();
             })
             $scope.$evalAsync();
@@ -100,3 +104,4 @@
     });
 
 })();
+

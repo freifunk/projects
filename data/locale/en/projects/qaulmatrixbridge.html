@@ -1,0 +1,58 @@
+<h1 id="qaul---matrix-bridge">qaul &lt;-&gt; Matrix Bridge</h1>
+
+<p>Write a matrix bridge for qaul, to be able to interconnect qaul with matrix and all supported communication protocols by matrix. This shall allow to send qaul messages to matrix, signal messenger, WhatsApp, Telegram, etc.</p>
+
+<p>A matrix bridge is interconnects matrix with other systems. There are already matrix bridges for many other messengers (Signal messenger, WhatsApp, Telegram, etc.). With the qaul-matrix bridge we could interconnect qaul to all these messengers.</p>
+
+<p>The bridge shall have the following qualities:</p>
+
+<p>1) <strong>Relay Bridge</strong>: creates a relay bot for matrix &amp; qaul
+2) <strong>Double-Puppeting</strong>: makes users from one system appear as users in the other system.</p>
+
+<p>This project can be split into different parts.</p>
+
+<h2 id="about-qaul">About qaul</h2>
+
+<p><a href="https://qaul.net">qaul</a> is an Internet independent wireless mesh communication app. To communicate P2P directly from device to device and mesh all interconnected devices together.
+qaul.net interconnects Android, iOS, Linux, MacOS &amp; Windows devices via LAN, Bluetooth and Internet overlay connections.</p>
+
+<p>qaul is written in rust, uses rust-libp2p internally and has a cross platform flutter GUI.</p>
+
+<p><a href="https://qaul.net">https://qaul.net</a></p>
+
+<h2 id="resources">Resources</h2>
+
+<ul>
+  <li><a href="https://matrix.org/bridges/">Matrix bridge documentation</a></li>
+  <li>Libqaul communication services
+    <ul>
+      <li><a href="https://github.com/qaul/qaul.net/tree/main/rust/libqaul/src/services/feed">Public messaging</a></li>
+      <li><a href="https://github.com/qaul/qaul.net/tree/main/rust/libqaul/src/services/chat">Chat messaging</a></li>
+      <li><a href="https://github.com/qaul/qaul.net/blob/main/rust/libqaul/src/node/user_accounts.rs">qaul users</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="milestones">Milestones</h2>
+
+<ul>
+  <li>create a concept for your project (application phase)</li>
+  <li>create a detailed concept for the relay bridge</li>
+  <li>implement the relay bridge
+    <ul>
+      <li>implement the libqaul part in rust</li>
+      <li>create a golang matrix communication part</li>
+    </ul>
+  </li>
+  <li>create a detailed concept for double-puppeting</li>
+  <li>implement the double-puppeting, as far as defined
+    <ul>
+      <li>implement the libqaul part in rust</li>
+      <li>create a golang matrix communication part</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="applying-for-this-project">Applying for this Project</h2>
+
+<p>Please get in contact with the Mentor @MathJud (via <a href="mailto:jud@qaul.net">Email</a> or <a href="https://matrix.to/#/#qaul.net:c-base.org">qaul matrix chat #qaul.net:c-base.org</a>) to discuss and prepare your application and project.</p>

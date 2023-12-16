@@ -1,0 +1,32 @@
+<p>To contribute to LibreMesh most of the time one have to create a new module that
+is usually shipped as an OpenWrt package. People that have been joining
+LibreMesh development over time have been encountering a steep learning curve
+especially packaging their modules, because of the complexity of OpenWrt
+build-root. Those packages most of the time consists just of a couple of Lua or
+shell scripts that doesn’t need cross-compiling and other advanced features
+provided by OpenWrt build-root.</p>
+
+<p>Providing a tool to create simple <code class="language-plaintext highlighter-rouge">opkg</code> archives without depending on the
+build-root in those cases would help new developers to start contributing
+without a steep learning barrier. Moreover such a tool would have much less
+requirements that the OpenWrt build-root.</p>
+
+<h4 id="milestones">Milestones</h4>
+
+<ul>
+  <li>Understand what is exactly an OPKG archive (compression, manifest…)</li>
+  <li>Create a simple prototype of the out-of-build-root packager</li>
+  <li>Test it with simple packages</li>
+  <li>Complete the implementation, and test it with LibreMesh modules</li>
+  <li>Document how to use the created tool</li>
+</ul>
+
+<h5 id="preparationbonding">PREPARATION/BONDING</h5>
+
+<ul>
+  <li>Get a general understanding of LibreMesh</li>
+  <li>Get a general understanding of OpenWrt</li>
+  <li>Briefly study LibreMesh networking architecture</li>
+  <li>Clearly understand LibreMesh software architecture</li>
+  <li>Discuss possible development with mentors</li>
+</ul>

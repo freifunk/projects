@@ -1,0 +1,56 @@
+<h1 id="user-authentication-layer">User Authentication Layer</h1>
+
+<p>The GUI communicates via protobuf RPC messaging with libqaul. At the moment there is only one user per node. libqaul is capable of having multi users per node. The GUI &lt;-&gt; libqaul RPC communication shall be organized in sessions. Each session shall be authenticated and encrypted.</p>
+
+<p>The user authentication layer shall have the following qualities:</p>
+
+<ul>
+  <li>Secure authentication mechanism
+    <ul>
+      <li>optional user password.</li>
+    </ul>
+  </li>
+  <li>The system should be zero-config for the user. A password and/or a session key (which can be cached) can be used.</li>
+  <li>The system shall support multiple sessions per user &amp; multiple users per node.</li>
+  <li>Each session shall be transport encrypted via the Noise protocol.</li>
+</ul>
+
+<p>This work is also the foundation of a possible web interface in qaul, in which users interact with a node via a web GUI.</p>
+
+<h2 id="milestones">Milestones</h2>
+
+<ul>
+  <li>During application period: Create a concept for your project. Discuss your concept with a mentor.
+    <ul>
+      <li>Define the authentication system</li>
+      <li>Define the encryption system</li>
+    </ul>
+  </li>
+  <li>Define the Protobuf communication structure</li>
+  <li>Implement the Sessions.
+    <ul>
+      <li>Implement the sessions into the CLI application.</li>
+    </ul>
+  </li>
+  <li>Implement the Authentication system.</li>
+  <li>Encrypt the sessions</li>
+</ul>
+
+<h2 id="resources">Resources</h2>
+
+<ul>
+  <li><a href="https://github.com/qaul/qaul.net/tree/main/rust/libqaul/src/rpc">qaul Protobuf RPC</a></li>
+</ul>
+
+<h2 id="about-qaul">About qaul</h2>
+
+<p><a href="https://qaul.net">qaul</a> is an Internet independent wireless mesh communication app. To communicate P2P directly from device to device and mesh all interconnected devices together.
+qaul.net interconnects Android, iOS, Linux, MacOS &amp; Windows devices via LAN, Bluetooth and Internet overlay connections.</p>
+
+<p>qaul is written in rust, uses rust-libp2p internally and has a cross platform flutter GUI.</p>
+
+<p><a href="https://qaul.net">https://qaul.net</a></p>
+
+<h2 id="applying-for-this-project">Applying for this Project</h2>
+
+<p>Please get in contact with the Mentor @MathJud (via <a href="mailto:jud@qaul.net">Email</a> or <a href="https://matrix.to/#/#qaul.net:c-base.org">qaul matrix chat #qaul.net:c-base.org</a>) to discuss and prepare your application and project.</p>

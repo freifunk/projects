@@ -1,0 +1,40 @@
+<p>The goal is to create an environment that allows to collect rate control and client capabilities to optimize transmission rate control for client devices. To this end, the project will leverage an interface provided by the supraconex [1] project to collect transmission rate statistics from OpenWrt-based [2] devices. Moreover, the system should also allow to leverage fingerprinting mechanisms based on the client capabilities such as WiFi taxonomy [3].</p>
+
+<p>Within the project, both approaches are combined to perform a client-based clustering of WiFi devices to create an understanding whether used rates etc. might correlate between different classes of devices. This should allow to further optimize transmission rate algorithms in the presence of handovers etc. Accordingly, a measurement environment needs to be proposed that allows to anonymously collect statistics from different home networks.</p>
+
+<h4 id="resources">Resources</h4>
+
+<ul>
+  <li>[1] https://supraconex.de/</li>
+  <li>[2] https://openwrt.org/</li>
+  <li>[3] https://github.com/NetworkDeviceTaxonomy/wifi_taxonomy</li>
+</ul>
+
+<h4 id="milestones">Milestones</h4>
+
+<ul>
+  <li>Planing of the integration of different mechanisms into the OpenWrt build environment</li>
+  <li>Integration of the tools and drivers into OpenWrt</li>
+  <li>Design and description of a measurement environment</li>
+  <li>Implementation of the measurement environment and necessary tools</li>
+  <li>Evaluation of the collected statistics</li>
+</ul>
+
+<h5 id="preparationbonding">PREPARATION/BONDING</h5>
+
+<ul>
+  <li>Understanding of the OpenWrt build environment</li>
+  <li>Understanding of statistics</li>
+  <li>Understanding of WiFi such as transmission rate control and capabilities</li>
+</ul>
+
+<h5 id="coding-period">Coding Period</h5>
+
+<ul>
+  <li>Implementation of different tools</li>
+  <li>Integration of the tools and APIs into OpenWrt</li>
+  <li>Realization of the measurement environment</li>
+  <li>Collection of privacy-preserving statistics</li>
+  <li>Evaluation of the use case</li>
+</ul>
+

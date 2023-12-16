@@ -1,0 +1,42 @@
+<p><code class="language-plaintext highlighter-rouge">OpenWrt</code> is a distribution for embedded devices such as WiFi router etc. <code class="language-plaintext highlighter-rouge">LuCI</code> is a framework to build a web interface for configuration and monitoring.</p>
+
+<p>With the old system all pages are rendered on the router delivering html to the browser. This leads to a higher load on the embedded devices. To reduce this load, rendering should be outsourced to the browser. The framework LuCI itself is already prepared for this and provides a client side API.</p>
+
+<p>Data will be provided via rpcd and ubus in a JSON format. You probably have to write new rpcd services to provide data that was formerly used directly on the router. Services are usually written as ash script.</p>
+
+<h4 id="resources">Resources</h4>
+
+<ul>
+  <li>LuCI <a href="https://github.com/openwrt/luci">source code</a></li>
+  <li>LuCI <a href="https://github.com/openwrt/luci/wiki/Documentation">documentation</a></li>
+  <li>client-side JavaScript API <a href="https://openwrt.github.io/luci/jsapi/">documentation</a></li>
+  <li>Freifunk <a href="https://github.com/freifunk/openwrt-packages">apps and modules</a> for LuCI</li>
+  <li><a href="https://github.com/weimarnetz/packages/tree/brauhaus-19.07/utils/luci-app-weimarnetz">Another app</a> already migrated to js</li>
+</ul>
+
+<h4 id="milestones">Milestones</h4>
+
+<ul>
+  <li>Learn how the new LuCI client side API works</li>
+  <li>Learn how to write rpcd services</li>
+  <li>Learn how to set permissions and menu entries</li>
+  <li>Discuss a list of LuCI apps and modules you plan to migrate</li>
+  <li>Make a HowTo for others to help them migrating further apps</li>
+</ul>
+
+<h5 id="preparationbonding">PREPARATION/BONDING</h5>
+
+<ul>
+  <li>Get a general understanding of how the cbi based (old) approach works.</li>
+  <li>Study the <a href="https://github.com/openwrt/luci/tree/master/applications/luci-app-example">example app</a> to see how it generally works.</li>
+  <li>See other apps like <a href="https://github.com/freifunk/openwrt-packages/tree/master/modules/luci-mod-freifunk">luci-mod-freifunk</a> that are already migrated to learn more details.</li>
+  <li>Get familiar with rpcd and ubus.</li>
+</ul>
+
+<h5 id="coding-period">Coding Period</h5>
+
+<ul>
+  <li>Find a simple app to start migrating</li>
+  <li>Create documentation for things that have not been documented so far</li>
+  <li>Work step by step on the list of apps and modules you created in the beginning</li>
+</ul>

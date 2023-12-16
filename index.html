@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>freifunk GSoC Projects
+    
+  </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="resources/js/jquery.min.js"></script>
+  <script src="resources/js/angular.min.js"></script>
+  <script src="resources/js/materialize.min.js"></script>
+  <script src="resources/js/angular-route.min.js"></script>
+  <script async defer src="resources/js/buttons.js"></script>
+  <script src="resources/vendors/angular-sanitize/angular-sanitize.js"></script>
+  <script src="resources/vendors/showdown/showdown.js"></script>
+  <script src="resources/vendors/markdown/markdown.js"></script>
+  <script>var baseUrl = '';</script>
+  <script src="resources/js/app.js"></script>
+  <!-- Import coala module directive-->
+  <script src="resources/js/directives/projects.js"></script>
+  <script src="resources/js/directives/mentors.js"></script>
+  <script src="resources/js/directives/faqs.js"></script>
+  <script src="resources/js/directives/students.js"></script>
+  <script src="https://kit.fontawesome.com/e4353a2c7e.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="resources/vendors/materialize/css/materialize.css">
+  <link rel="stylesheet" href="resources/css/coala.css">
+  <link rel="stylesheet" href="resources/css/style.css">
+  <link href="resources/css/gfonts.css" rel="stylesheet">
+  <link href="resources/css/materialicons.css" rel="stylesheet">
+  <link href="resources/fontawesome/css/all.css" rel="stylesheet">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <main ng-app="coala">
+    <nav ng-controller="NavController as nc">
+      <div class="nav-wrapper">
+        <a href="/" class="brand-logo"><img class="nav-logo" src="screenshots/logo.png" alt="logo"></a>
+        <a data-activates="mobile-nav" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li ng-class="{active:nc.isSet('/projects')}">
+            <a class="uppercase" ng-click="nc.setView('/projects')" onmousedown="keyPressed(event, '#/projects')">
+              Projects
+            </a>
+          </li>
+          <li ng-class="{active:nc.isSet('/mentors')}">
+            <a class="uppercase" ng-click="nc.setView('/mentors')" onmousedown="keyPressed(event, '#/mentors')">
+              Mentors
+            </a>
+          </li>
+          <li ng-class="{active:nc.isSet('/faq')}">
+            <a ng-click="nc.setView('/faq')" onmousedown="keyPressed(event, '#/faq')" onerror="">
+              FAQs
+            </a>
+          </li>
+          <li ng-class="{active:nc.isSet('/completed')}">
+            <a ng-click="nc.setView('/completed')" onmousedown="keyPressed(event, '#/completed')" onerror="">
+              COMPLETED PROJECTS
+            </a>
+          </li>
+          <li><a href="https://github.com/freifunk/projects" target="_blank" title="Fork us on GitHub"><i class="fa fa-github fa-2x"
+                aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+    </nav>
+    <ul class="side-nav" id="mobile-nav" ng-controller="NavController as nc">
+      <li ng-class="{active:nc.isSet('/projects')}"><a class="uppercase" ng-click="nc.setView('/projects')"
+          onmousedown="keyPressed(event, '#/projects')">Projects</a></li>
+      <li ng-class="{active:nc.isSet('/mentors')}"><a class="uppercase" ng-click="nc.setView('/mentors')"
+          onmousedown="keyPressed(event, '#/mentors')">Mentors</a></li>
+      <li ng-class="{active:nc.isSet('/faq')}"><a ng-click="nc.setView('/faq')" onmousedown="keyPressed(event, '#/faq')"
+          onerror="">FAQs</a></li>
+      <li ng-class="{active:nc.isSet('/completed')}"><a ng-click="nc.setView('/completed')"
+          onmousedown="keyPressed(event, '#/completed')" onerror="">COMPLETED PROJECTS</a></li>
+      <li><a href="https://github.com/freifunk/projects" target="_blank" title="Fork us on GitHub"><i class="fa fa-github fa-2x"
+            aria-hidden="true"></i></a></li>
+    </ul>
+    <div ng-view=""></div>
+  </main>
+  <footer class="page-footer">
+    <div class="row center for-mobile"> <a class="github-button" href="https://github.com/freifunk/projects" data-size="large">Fork</a>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col m3 s12">
+          <h5 class="white-text fine">Site Links</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="https://freifunk.net/en/what-is-it-about/">What is freifunk.net?</a></li>
+            <li><a class="grey-text text-lighten-3" href="https://github.com/freifunk/MoU/blob/master/FreifunkMemorandumofUnderstanding_en.md">Memorandum of
+                Understanding</a></li>
+            <li><a class="grey-text text-lighten-3" href="https://blog.freifunk.net">Blog</a></li>
+          </ul>
+        </div>
+        <div class="col m9 s12 center">
+          <div class="center">
+            <h3 class="fine white-text">
+              <span>
+                <img class="footer-logo" height="36px" src="resources/images/coala.png" alt="coala">
+              </span>
+              <span>freifunk.net</span>
+            </h3>
+          </div>
+          <div class="center footer-icons">
+            <span class="icon">
+              <a href="https://social.freifunk.net/@freifunk" rel="me" target="_blank" class="btn center">
+                <i class="fa-brands fa-mastodon" style="color: #dc0067;">
+                </i>&nbsp;Follow us on Mastodon
+              </a>
+            </span>
+            <span class="icon">
+              <a href="https://matrix.to/#/!DmXQbxcSxGYgXDYrBs:bau-ha.us?via=bau-ha.us" target="_blank" class="btn center">
+                <i class="fa-solid fa-comments" style="color: #dc0067;">
+                </i>&nbsp;Join our Chat
+              </a>
+            </span>
+            <span class="icon">
+              <a href="https://github.com/freifunk/projects" target="_blank" class="btn center">
+                <i class="fa-brands fa-github" style="color: #dc0067;"></i>
+                &nbsp;Star us on GitHub
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        <span class="left">
+          ©
+          <span id="current-year"></span>
+          freifunk.net
+        </span>
+        <span class="grey-text text-lighten-4 right"></span>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
+
+
+<script>
+  $(document).ready(function () {
+    $('select').material_select();
+    $(".button-collapse").sideNav();
+    $('#current-year').html(new Date().getFullYear());
+    $('.github-card').html('<img src="resources/images/100x100.png" />')
+  })
+</script>
+<script>
+  function keyPressed(event, loc) {
+    if (event.ctrlKey) {
+      window.open(loc, '_blank');
+    }
+  }
+</script>

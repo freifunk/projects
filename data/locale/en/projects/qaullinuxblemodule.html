@@ -1,0 +1,59 @@
+<h1 id="qaul-ble-module-for-linux-with-bluer">qaul BLE Module for Linux with BlueR</h1>
+
+<p><strong>Create a BLE (Bluetooth Low Energy) module in rust which compatible to the two existing modules for Android &amp; iOS.</strong></p>
+
+<p>Create a BLE (Bluetooth Low Energy) module in rust which compatible to the two existing modules for Android &amp; iOS.</p>
+
+<p>Existing android BLE module:
+<a href="https://github.com/qaul/qaul.net/tree/main/android/blemodule">https://github.com/qaul/qaul.net/tree/main/android/blemodule</a></p>
+
+<p>It shall do the following things:</p>
+
+<ul>
+  <li>Listen for BLE advertisements
+    <ul>
+      <li>detect neighbour nodes</li>
+    </ul>
+  </li>
+  <li>Send BLE advertisement messages in regular intervals.</li>
+  <li>send arbitrary binary data to nodes nearby.</li>
+  <li>receive arbitrary binary data from nodes nearby.</li>
+</ul>
+
+<p>The module is independent and will communicate via protobuf to the controlling backend library libqaul.</p>
+
+<p><code class="language-plaintext highlighter-rouge">BlueR</code> is the official Bluetooth low energy repository for rust.
+<a href="https://github.com/bluez/bluer">https://github.com/bluez/bluer</a></p>
+
+<p>Prototypes with partial functionality already exist.</p>
+
+<h2 id="about-qaul">About qaul</h2>
+
+<p><a href="https://qaul.net">qaul</a> is an Internet independent wireless mesh communication app. To communicate P2P directly from device to device and mesh all interconnected devices together.
+qaul.net interconnects Android, iOS, Linux, MacOS &amp; Windows devices via LAN, Bluetooth and Internet overlay connections.</p>
+
+<p>qaul is written in rust, uses rust-libp2p internally and has a cross platform flutter GUI.</p>
+
+<p><a href="https://qaul.net">https://qaul.net</a></p>
+
+<h2 id="resources">Resources</h2>
+
+<ul>
+  <li><a href="https://github.com/qaul/qaul.net">qaul github repository</a></li>
+  <li><a href="https://github.com/bluez/bluer">BlueR Rust BLE library</a></li>
+</ul>
+
+<h2 id="milestones">Milestones</h2>
+
+<ul>
+  <li>setup rust protobuf communication with libqaul</li>
+  <li>create advertising (prototype exists)</li>
+  <li>create scanning (prototype exists)</li>
+  <li>create GATT service for ID exchange</li>
+  <li>send message</li>
+  <li>receive message</li>
+</ul>
+
+<h2 id="applying-for-this-project">Applying for this Project</h2>
+
+<p>Please get in contact with the Mentor @MathJud (via <a href="mailto:jud@qaul.net">Email</a> or <a href="https://matrix.to/#/#qaul.net:c-base.org">qaul matrix chat #qaul.net:c-base.org</a>) to discuss and prepare your application and project.</p>

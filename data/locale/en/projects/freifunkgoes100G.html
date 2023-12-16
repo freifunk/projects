@@ -1,0 +1,49 @@
+<p>Current Freifunk Community networks across Europe are expanding their wireless P2P backbone infrastructure to wired fibre links, hence capacities beyond 10GBit/s are achievable.
+Today’s switching hardware can be categorised into three design approaches:
+    - Switch Abstraction Interface (SAI) [1] which is leveraged by SONiC (NOS) [2]
+    - OF-CONFIG [3] which enables to configure the forwarding plane of Broadcom-based switches
+    - Switchdev (Linux kernel API [4]), which could be leveraged by the Distributed Switch Architecture (DSA) [5]</p>
+
+<p>Moreover, other approaches exist to expose the packet handling/forwarding into the user space</p>
+<ul>
+  <li>DPDK/VPP interface that would require a significant re-implementation of the Freifunk network stack and features such as olsrd/batman/babel routing daemons. The flexible switchdev Linux kernel API builds upon standard Linux tools such as IP etc. this enables Freifunk communities to code as well as add features running atop a classical Linux-based system also on devices beyond 10 Gbps interfaces. Since NVIDIA Mellanox Spectrum II switches implement the Linux kernel switchdev API, they seem to be a reasonable choice to achieve this goal.</li>
+</ul>
+
+<p>Accordingly, the goal of this project is to port Freifunk/OpenWrt [6] OS to the Mellanox Spectrum II-based switch[7] hardware - in such a way, that the ONIE [8] bootloader triggers an OpenWrt boot, daemons such as olsrd/batman/babel routing daemons can run as usual, and (Q)SFP-based ports are deployable on fiber links.</p>
+
+<h4 id="resources">Resources</h4>
+
+<ul>
+  <li>[1] https://github.com/opencomputeproject/SAI</li>
+  <li>[2] https://sonic-net.github.io/SONiC/</li>
+  <li>[3] https://github.com/openvswitch/of-config</li>
+  <li>[4] https://www.kernel.org/doc/html/latest/networking/switchdev.html</li>
+  <li>[5] https://www.kernel.org/doc/Documentation/networking/dsa/dsa.txt</li>
+  <li>[6] https://openwrt.org/</li>
+  <li>[7] https://github.com/Mellanox/mlxsw/wiki</li>
+  <li>[8] https://opencomputeproject.github.io/onie/</li>
+</ul>
+
+<h4 id="milestones">Milestones</h4>
+
+<ul>
+  <li>DTS Integration for at least Mellanox Spectrum II-based switches in OpenWrt</li>
+  <li>add new OpenWrt “Mellanox” target with ONIE bootloader support</li>
+  <li>SFP+ p2p 100G link setup test on desk</li>
+</ul>
+
+<h5 id="preparationbonding">PREPARATION/BONDING</h5>
+
+<ul>
+  <li>Understanding of the OpenWrt build environment</li>
+  <li>Understanding of the different Switching-based Architectures such as switchdev, SAI, OF-CONFIG</li>
+  <li>Understanding of ONIE and Linux OS bring-up process</li>
+</ul>
+
+<h5 id="coding-period">Coding Period</h5>
+
+<ul>
+  <li>Porting Meallanox Switch with Sectrum II chipset to OpenWrt</li>
+  <li>Add dedicated Mellanox target to the Freifunk/OpenWrt device set</li>
+  <li>Evaluation 100G SFP+ fiber ports</li>
+</ul>

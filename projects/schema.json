@@ -1,0 +1,103 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Schema for Projects",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string"
+        },
+        "desc": {
+            "type": "string"
+        },
+        "collaborating_projects": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "developers_involved": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "difficulty": {
+            "type": "string"
+        },
+        "status": {
+            "type": "string"
+        },
+        "initiatives": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "issues": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "size": {
+            "type": "string"
+        },
+        "markdown": {
+            "type": "string"
+        },
+        "mentors": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "minProperties": 1,
+                "properties": {
+                    "name": {
+                        "type": "string"
+                    },
+                    "contact": {
+                        "type": "object",
+                        "properties": {
+                            "github": {
+                                "type": "string"
+                            },
+                            "email": {
+                                "type": "string"
+                            },
+                            "other_chat_options": {
+                                "type": "array",
+                                "items": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                },
+                "required": [
+                    "name",
+                    "contact"
+                ]
+            }
+        },
+        "requirements": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "tags": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        }
+    },
+    "required": [
+        "name",
+        "desc",
+        "difficulty",
+        "status",
+        "initiatives",
+        "size",
+        "mentors"
+    ]
+}

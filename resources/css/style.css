@@ -1,0 +1,247 @@
+.all-filters-option {  /* Ignore CSSLintBear */
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 0 15px 2px black;
+  margin: 10px 0;
+  min-width: 350px;
+  position: relative;
+  z-index: 1002;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+}
+.apply-flex {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+}
+.break-word {
+  word-wrap: break-word;
+}
+.center-content {
+  justify-content: center;
+}
+.close-filters {
+  margin-top: 1.25rem;
+  position: absolute;
+  right: 6%;
+  z-index: 1003;
+}
+.display-none {
+  display: none;
+}
+.evenly-spread-content {
+  justify-content: space-evenly;  /* Ignore CSSLintBear */
+}
+.hash_value_dup {
+  left: -9999px;
+  position: absolute;
+}
+.hinttext {
+  background-color: gray;
+  border-radius: 6px;
+  color: #fff;
+  left: 60%;
+  margin-left: -60px;
+  padding: 5px 0;
+  position: absolute;
+  text-align: center;
+  top: 95%;
+  visibility: hidden;
+  width: 120px;
+  z-index: 1;
+}
+.hinttext::after {
+  border-color: transparent transparent gray transparent;
+  border-style: solid;
+  border-width: 5px;
+  bottom: 100%;
+  content: " ";
+  left: 50%;
+  margin-left: -5px;
+  position: absolute;
+}
+.fa-clipboard:hover {
+  cursor: pointer;
+}
+.fa-clipboard:hover .hinttext {
+  visibility: visible;
+}
+.filter-projects-inputs {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;  /* Ignore CSSLintBear */
+  margin-top: 1rem;
+}
+.filter-btn {
+  width: 165px;
+  z-index: 0;
+}
+.filter-btn .btn-large {
+  border-radius: 100px;
+  box-shadow: 0 0 10px 1px darkslategray;
+}
+.filters-btns {
+  width: 50%;
+}
+.filters-inputs {
+  justify-content: space-around;
+  padding: 20px 0;
+}
+.filter-select-fields {
+  justify-content: space-around;
+  padding-bottom: 10px;
+  padding-top: 20px;
+  width: 100%;
+}
+.footer-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;  /* Ignore CSSLintBear */
+  line-height: 3em;
+}
+.gsoc-students {
+  margin-top: 1em;
+}
+.icon {
+  color: white;
+}
+.fa {
+  cursor: pointer;
+}
+.justify-text {
+  text-align: justify;
+}
+nav {
+  background-color: #dc0067;
+  font-weight: bold;
+}
+.nav-logo {
+  width: 80px;
+}
+.project-detail-element > .clickable:hover, .clickable:hover .chip:hover {
+  background-color: #f3f5f8;
+  cursor: pointer;
+}
+.report .card {
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.0), 0 1px 1px 0 rgba(0, 0, 0, 0.0), 0 1px 1px 0 rgba(0, 0, 0, 0.05);
+  margin-bottom: 0;
+}
+.report {
+  background-color: #f3f5f8;
+}
+.report .card .card-content {
+  padding: 12px;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  color: #dc0067;
+  font-weight: bolder;
+}
+.report .link {
+  padding: 0.5em;
+}
+.tab {
+  cursor: pointer;
+}
+.report .fullh {
+  height: 100%;
+}
+.report .blog-title {
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+.report .links-section a {
+  color: lightslategray;
+  padding: 0.1em;
+  text-decoration: none;
+}
+.report .row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+}
+.report .row > [class*='col'] {  /* Ignore CSSLintBear */
+  display: flex;
+  flex-direction: column;
+}
+.report .flex1 {
+  flex: 1;
+}
+.report .activity {
+  white-space: pre;
+}
+.report .fl {
+  background: lightcyan;
+  text-align: center;
+}
+.report .card {
+  word-break: break-word;  /* Ignore CSSLintBear */
+}
+.report td p {
+  display: inline;
+}
+.report .padding-table tbody tr {
+  border-bottom: 1px solid aliceblue;
+}
+.report-url a {
+  color: #f57f17;
+}
+@media only screen and (min-width: 993px) {
+  .container {
+      width: 90%;
+  }
+  .for-mobile {
+    display: none;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .for-non-mobile {
+    display: none;
+  }
+}
+.searchbar {
+  margin-top: 0;
+  min-width: 340px;
+  width: 85%;
+}
+.sha256sum_hash {
+  display: flex;
+  justify-content: space-evenly;  /* Ignore CSSLintBear */
+}
+.students {
+  padding: 0 20px;
+}
+.theatre .name {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+.sha256sum_hash_value {
+  word-wrap: break-word;
+}
+@-webkit-keyframes fade-in {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@keyframes fade-in {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+.fade-in {
+  -webkit-animation-name: fade-in;
+  animation-name: fade-in;
+}
+
+.faqanswer ul {
+  padding-left: 4em;
+  padding-right: 4em;
+}
+
+.faqanswer ul li {
+  list-style: disc;
+}

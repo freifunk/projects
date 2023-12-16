@@ -1,0 +1,62 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+    padding: 0;
+    width: 100%;
+}
+main {
+    align-items: center;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+main .container {
+    padding: 3% 5%;
+}
+.error {
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+    margin-left: -12.5%;
+}
+.error .message {
+    color: #dc0067;
+    display: block;
+    font-size: 4.5vw;
+    font-weight: bold;
+}
+.error p {
+    font-size: 2vw;
+    font-weight: 200;
+}
+.error p span {
+    font-weight: 400;
+}
+.error .home {
+    text-transform: uppercase;
+}
+.error .buttons {
+    padding: 3%;
+}
+.coala-book {
+    opacity: 0.85;
+    text-align: center;
+}
+.coala-book img {
+    width: 80%;
+}
+@media only screen and (max-width:760px) {
+    main {
+        flex-direction: column;
+    }
+    .error {
+        margin-left: auto;
+        text-align: center;
+    }
+    .error p {
+        font-size: 3.5vw;
+    }
+    .coala-book img {
+        width: 100%;
+    }
+}

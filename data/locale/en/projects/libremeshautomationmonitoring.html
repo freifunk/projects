@@ -1,0 +1,62 @@
+<p>Create a set of automated tasks to install services on a Raspberry Pi to meet the needs of small community-network with an administration/tech team, e.g. a set of commonly needed monitoring tools, such as Prometheus, Prometheus-node-exporter, Blackbox-exporter, Altermanager, Grafana, VPN and an editing map service.</p>
+
+<p>Similar projects or packages:
+https://gitlab.com/librerouter/miniserver
+https://github.com/libremesh/lime-packages/tree/master/packages/altermundi-grafana</p>
+
+<p>The use case is a growing fragmented network with islands of nodes and users; but with a collective management having an overarching vision on what is happening in the network and giving feedback to the users by the <a href="https://github.com/libremesh/lime-app">Lime-App</a>.</p>
+
+<p>Create a set of Ansible roles to replicate the OpenWrt build-system, to speed-up the process of self-building images for OpenWrt and/or LibreMesh for newcomers, and to easily setup a dedicated machine, with the possibility to later extend the process of build to other automated tasks, like a pub-keys-exchange needed for configuring a VPN, or to update documentations or a webapp.
+The Ansible roles would include tasks to build for: different architectures and targets; different OpenWrt and LibreMesh versions; keeping trace of devices with particular needs and related patches; keeping a local list of supported targets; provide a basic functionality to setup a VPN. This should also provide a main configuration file for each device, and the use of the main configuration tools available on LibreMesh, like +/etc/config/lime-*+ and especially +lime-macaddress+ files, “generic-uci-config, lime-asset” functionalities, and configurations and packages provided by community <a href="https://github.com/libremesh/network-profiles">network-profiles</a> or local packages.
+These will be published and shared also on Ansible Galaxy or similar repository as a standalone project.</p>
+
+<h4 id="milestones">Milestones</h4>
+
+<ul>
+  <li>Automation on LibreMesh build system</li>
+  <li>Automation on monitoring</li>
+  <li>Collectors of data</li>
+  <li>Data visualization</li>
+  <li>Integration in Lime-App</li>
+</ul>
+
+<h5 id="gsoc-community-bonding">GSOC COMMUNITY BONDING</h5>
+
+<ul>
+  <li>Getting familiar with LibreMesh compilation using the OpenWrt buildroot</li>
+  <li>Learn to develop a basic LibreMesh package and compile it in a firmware image</li>
+  <li>Flashing of at least 3 wifi routers with the compiled LibreMesh</li>
+  <li>Have these routers connected in a (indoor) mesh network</li>
+  <li>Get familiar with the LibreMesh web interface “Lime-App”</li>
+  <li>Get familiar with the OpenWrt basic folders structure and acquainted with its command line interface</li>
+  <li>Get familiar with the tools for quantifying the quality of single wireless links, both the ones provided by the Linux kernel and the ones from the router protocols employed in LibreMesh (Batman-adv, Babeld)</li>
+  <li>Deploying the already existing monitoring systems on at least 1 Raspberry-Pi</li>
+  <li>Document the entire process at least with a post on the Freifunk blog</li>
+</ul>
+
+<h5 id="gsoc-midterm">GSOC MIDTERM</h5>
+
+<ul>
+  <li>Develop automation on LibreMesh build system</li>
+  <li>Write and publish sets of configuration management on Ansible Galaxy</li>
+  <li>Deploying automated LibreMesh build system on at least 2 computers</li>
+  <li>Publish a “LibreMesh observer” deploy instruction for Arm architecture</li>
+  <li>Set up multiple observation points, including at least 2 Raspberry-Pi, to collect data from LibreMesh routers</li>
+  <li>Verify if it is possible to integrate a Grafana dashboard in Lime-App to receive feedback about traffic and develop a basic demonstrator</li>
+  <li>Write a post on the Freifunk blog detailing which of the monitoring tools under development are suited for being integrated with the LibreMesh web interface “lime-app” and documenting the proof-of-concept integration of Grafana in Lime-App, if achieved</li>
+  <li>Propose in the LibreMesh repositories the pieces of code that are standalone</li>
+</ul>
+
+<h5 id="gsoc-final">GSOC FINAL</h5>
+
+<ul>
+  <li>Develop automation on LibreMesh build system</li>
+  <li>Write and publish sets of configuration management on Ansible Galaxy</li>
+  <li>Deploying automated LibreMesh build system on at least 2 computers</li>
+  <li>Publish a “LibreMesh observer” deploy instruction for Arm architecture</li>
+  <li>Set up multiple observation points, including at least 2 Raspberry-Pi, to collect data from LibreMesh routers</li>
+  <li>Verify if it is possible to integrate a Grafana dashboard in Lime-App to receive feedback about traffic and develop a basic demonstrator</li>
+  <li>Write a post on the Freifunk blog detailing which of the monitoring tools under development are suited for being integrated with the LibreMesh web interface “lime-app” and documenting the proof-of-concept integration of Grafana in Lime-App, if achieved</li>
+  <li>Propose in the LibreMesh repositories the pieces of code that are standalone</li>
+</ul>
+

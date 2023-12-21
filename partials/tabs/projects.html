@@ -147,13 +147,6 @@ therefore adding an ignore comment -->
             }}</span>
         </div>
         <div ng-show="currentProject.mentors.length>0" class="project-detail-element">
-          <div class="small-heading uppercase">Mentors</div>
-          <span class="pr-element-detail chip" ng-repeat="mentor in currentProject.mentors">
-            <a ng-href="https://github.com/{{mentor.github_handle}}" class="mentors-github-id chip" target="_blank">@{{
-              mentor.name }}</a>
-          </span>
-        </div>
-        <div ng-show="currentProject.mentors.length>0" class="project-detail-element">
           <div class="small-heading uppercase">Contact Mentors</div>
           <span class="pr-element-detail chip" ng-repeat="mentor in currentProject.mentors">
             <a ng-href="https://github.com/{{mentor.github_handle}}" class="mentors-github-id chip" target="_blank">@{{

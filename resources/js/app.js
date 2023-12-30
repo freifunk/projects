@@ -54,7 +54,8 @@
                 }).
                 when('/completed', {
                     templateUrl: baseUrl + '/partials/tabs/completed.html',
-                    controller: 'ProjectController'
+                    controller: 'ProjectController',
+                    controllerAs: 'lc'
                 }).
                 when('/faq', {
                     template: '<faq></faq>'

@@ -10,7 +10,7 @@ size: "350 hours"
 status: open
 initiatives:
   - GSoC
-  - GSoC2023
+  - GSoC2024
 issues: 
   - https://github.com/qaul/qaul.net/issues/531
 markdown: qaul-user-authentication.md

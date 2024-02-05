@@ -14,9 +14,10 @@ issues: []
 size: 350 hours
 markdown: firewall5.md
 mentors:
-- name: thuehn
-  contact:
-    github: thuehn
+  - name: thuehn
+    contact:
+      github: thuehn
+      email: thomas.huehn@evernet-eg.de
 requirements:
   - "Ansi C"
 tags:

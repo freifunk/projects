@@ -8,12 +8,20 @@ collaborating_projects:
 developers_involved: []
 difficulty: medium
 size: "350 hours"
-status: disabled
+status: open
 initiatives:
   - GSoC
-  - GSoC2023
+  - GSoC2024
 issues: []
-mentors: []
+mentors:
+- name: G10h4ck
+  contact:
+    github: G10h4ck
+    email: gio@diveni.re
+- name: Ilario
+  contact:
+    github: ilario
+    email: ilario@sindominio.net
 requirements:
   - "Lua programming language"
   - "Networking Knowledge"
@@ -21,7 +29,7 @@ requirements:
   - "Hardware for testing"
 tags:
   - GSoC
-  - GSoC2023
+  - GSoC2024
   - OpenWrt
   - LibreMesh
   - Networking

@@ -12,7 +12,7 @@ initiatives:
   - GSoC 2024
 issues: []
 size: 350 hours
-markdown: firewall5.md
+markdown: firewall-5_performant_WiFi_packet_handling_with_eBPF.md
 mentors:
   - name: thuehn
     contact:

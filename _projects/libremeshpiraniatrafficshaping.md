@@ -5,14 +5,32 @@ requirements:
  - "The applicant needs to have understanding of networking in mesh networks."
 difficulty: "high"
 size: "350 hours"
-status: disabled
+status: open
 issues:
  - "https://github.com/libremesh/lime-packages/issues/261"
  - "https://github.com/libremesh/lime-packages/issues/244"
-mentors: []
+mentors:
+- name: SAn
+  contact:
+    github: spiccinini
+    email: spiccinini@altermundi.net
+- name: Hiure
+  contact:
+    github: hiurequeiroz
+    email: hiure@riseup.net
+- name: Luandro
+  contact:
+    github: luandro
+    email: luandro@gmail.com
+    other_chat_options:
+    - luandro:matrix.org
+- name: Ilario
+  contact:
+    github: ilario
+    email: ilario@sindominio.net
 initiatives:
  - GSoC
- - GSoC2023
+ - GSoC2024
 tags:
  - LibreMesg
  - Pirania
@@ -32,14 +50,14 @@ The problem is absolutely non-trivial, and the technical tools needed will be at
 
 #### Milestones
 
-##### GSOC 2023 COMMUNITY BONDING
+##### GSOC 2024 COMMUNITY BONDING
 
 * Conceptual work should produce a coherent proposal to be submitted to the community for the review.
 * The contributor have a fork of the lime-packages repository and have learnt the basics of Git.
 * The applicant should have joined all of the communication channel of the project and met the community in the periodic online meetings.
 * An initial blog post will be written, with the invitation to propose alternative solutions for the identified challenges.
 
-##### GSOC 2023 MIDTERM
+##### GSOC 2024 MIDTERM
 
 * Conceptual work should be completed, the functions to be implemented and the tools should be fixed.
 * The applicant should have a working testing platform, either physical or virtual.
@@ -49,7 +67,7 @@ The problem is absolutely non-trivial, and the technical tools needed will be at
 * The applicant should be familiarized with Traffic Control for Smart Queue Management configuration and running.
 * A mid term blog post will be written.
 
-##### GSOC 2023 FINAL
+##### GSOC 2024 FINAL
 
 * The patch for Pirania should be functional even if not completely polished.
 * Everything has to be reviewed and merged.

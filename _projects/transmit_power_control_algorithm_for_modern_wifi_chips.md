@@ -3,7 +3,7 @@ name: New Transmit Power Control approach for IEEE 802.11ax WiFi chips
 desc: Developing and testing a Transmit Power Control algorithm for IEEE 802.11ax WiFi chips and beyond
 collaborating_projects:
   - openwrt.org
-developers_involved:
+developers_involved: []
 difficulty: tough
 status: open
 initiatives:

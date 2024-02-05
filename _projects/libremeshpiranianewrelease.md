@@ -24,10 +24,10 @@ issues:
 size: 350 hours # choose between 90 hours, 175 hours and 350 hours
 markdown: libremeshpiranianewrelease
 mentors:
-- name: public name of mentor 1
+- name: Bruno Viana
   contact:
-    github:  # provide at least one contact option
-    email: 
+    github: brunoviana  # provide at least one contact option
+    email: bruno@pobox.com
     other_chat_options:
     - link to matrix or similar
 requirements:

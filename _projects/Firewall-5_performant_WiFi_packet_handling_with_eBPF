@@ -4,7 +4,7 @@ desc: Implementation and Evaluation of a new OpenWrt Firewall version that utili
 collaborating_projects:
   - openwrt.org
 developers_involved:
-  - Til Kaiser (tk154), thuehn
+  - thuehn
 difficulty: tough
 status: open
 initiatives:

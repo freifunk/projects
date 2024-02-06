@@ -18,6 +18,10 @@ mentors:
   contact:
     github: G10h4ck
     email: gio@diveni.re
+- name: Bruno Vianna
+  contact:
+    github: brunovianna
+    email: bruno@pobox.com
 - name: Ilario
   contact:
     github: ilario

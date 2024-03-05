@@ -69,6 +69,6 @@ Accordingly, the goal of this project is to port Freifunk/OpenWrt [6] OS to the 
 
 ##### Coding Period
 
-* Porting Meallanox Switch with Sectrum II chipset to OpenWrt
+* Porting Mellanox Switch with Sectrum II chipset to OpenWrt
 * Add dedicated Mellanox target to the Freifunk/OpenWrt device set
 * Evaluation 100G SFP+ fiber ports

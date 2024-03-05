@@ -36,7 +36,7 @@ collaborating_projects:
  - "LibreMesh"
 ---
 
-Create a set of automated tasks to install services on a Raspberry Pi to meet the needs of small community-network with an administration/tech team, e.g. a set of commonly needed monitoring tools, such as Prometheus, Prometheus-node-exporter, Blackbox-exporter, Altermanager, Grafana, VPN and an editing map service.
+Create a set of automated tasks to install services on a Raspberry Pi to meet the needs of small community-network with an administration/tech team, e.g. a set of commonly needed monitoring tools, such as Prometheus, Prometheus-node-exporter, Blackbox-exporter, Alertmanager, Grafana, VPN and an editing map service.
 
 Similar projects or packages:
 https://gitlab.com/librerouter/miniserver

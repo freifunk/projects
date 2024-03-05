@@ -1,6 +1,6 @@
 ---
 name: "TX-Power Control in WiFi Networks"
-desc: "Implement per Packet Transmission Power Control for Mediathek and Atheros WiFI chips in OpenWrt"
+desc: "Implement per Packet Transmission Power Control for Mediatek and Atheros WiFI chips in OpenWrt"
 collaborating_projects:
   - openwrt.org
 developers_involved:

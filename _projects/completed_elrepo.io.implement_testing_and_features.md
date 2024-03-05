@@ -3,7 +3,7 @@ name: "ElRepo.io implement features and unit testing"
 desc: "Implement various features to elRepo.io"
 requirements:
  - "Flutter knowledge"
- - "RetroShare basic knowledge and c++ will be apreciated"
+ - "RetroShare basic knowledge and c++ will be appreciated"
 difficulty: "medium"
 size: "175 hours"
 status: completed

@@ -34,7 +34,7 @@ tags:
   - Makefiles
 ---
 
-[OpenWrt](openwrt.org) is a Linux distribution for off the shelf WiFi routers. People who want to make and distribute their personal packages, often for development purposes. So far the best option is to build the whole firmware from zero, but very few people use the OpenWrt SDKs. The idea behind this project is to create a platform to build and host those personal package repositories, possibility integrated with GIT farms, so that the end users can add a repositiory URL to use those packages, modelled on what Ubuntu PPA (Personal Package Archive) has been provided for years.
+[OpenWrt](openwrt.org) is a Linux distribution for off the shelf WiFi routers. People who want to make and distribute their personal packages, often for development purposes. So far the best option is to build the whole firmware from zero, but very few people use the OpenWrt SDKs. The idea behind this project is to create a platform to build and host those personal package repositories, possibility integrated with GIT farms, so that the end users can add a repository URL to use those packages, modelled on what Ubuntu PPA (Personal Package Archive) has been provided for years.
 
 There is no such platform at the moment, packages are made via Pull Requests on a central repository, but that does not meet the requirements of a typical developer, which are:
 

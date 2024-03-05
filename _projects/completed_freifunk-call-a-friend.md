@@ -35,9 +35,9 @@ Meshenger users exchange a name, crypto keys and IP/MAC address via QR-Code and 
 This App was quite a success and is available on [F-Droid](https://f-droid.org/en/packages/d.d.meshenger/).
 
 Since back then a few features (cryptography, call list, block list, lots of bugfixes) were added. But there was never a release, since calling is broken/fragile in the development branch. The reason is unknown.
-Meshenger is for the most part the [WebRTC Android example](https://chromium.googlesource.com/external/webrtc/+/refs/heads/main/examples/androidapp/) with added features. This should give you a solid guidline.
+Meshenger is for the most part the [WebRTC Android example](https://chromium.googlesource.com/external/webrtc/+/refs/heads/main/examples/androidapp/) with added features. This should give you a solid guideline.
 
-The task for this project would be to fix the the current state (possibly up- or downgrading WebRTC) to get a new release out of the door. A highly motivated person might event want to switch the project to Kotlin. The mentor(s) will support with understanding the code and inner working of the App throughout the project.
+The task for this project would be to fix the current state (possibly up- or downgrading WebRTC) to get a new release out of the door. A highly motivated person might event want to switch the project to Kotlin. The mentor(s) will support with understanding the code and inner working of the App throughout the project.
 
 This is an effort to create something that can be used across the globe for many small communities.
 
@@ -45,7 +45,7 @@ Many aspects of this project are up for the discussion. If you are interested, b
 
 #### Milestones
 
-##### GSoC Peraration/Bonding
+##### GSoC Preparation/Bonding
 
 * Let's talk about the current state of project.
 * Talking about the outline of the project.

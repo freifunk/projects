@@ -46,7 +46,7 @@ re-write, with the goal of becoming long-term contributors to the
 project.
 
 The Irdest application architecture uses an RPC protocol to connect
-client to a persistant server that handles user, message, and network
+client to a persistent server that handles user, message, and network
 abstractions.  In order to access these from Android code, some
 bindings in Java (or Kotlin) need to be created
 

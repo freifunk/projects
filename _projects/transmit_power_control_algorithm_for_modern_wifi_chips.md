@@ -48,7 +48,7 @@ The goal of this project is to initially implement a novel TPC algorithm in the 
 ##### GSOC COMMUNITY BONDING
 
 * Develop foundational understanding of the importance for resource allocation in wireless transmission, with a specific focus on power control.
-* Familize with the tools for developing and analzying resource control algorithms in user space
+* Familiarize with the tools for developing and analyzing resource control algorithms in user space
 * Create visual representation detailing the architecture of the formulated TPC algorithm.
 
 ##### GSOC MIDTERM

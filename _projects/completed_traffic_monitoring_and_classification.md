@@ -47,7 +47,7 @@ The goal of this project is, to realize traffic monitoring and classification me
 
 * Analysis of different approaches to run XDP and eBPF on OpenWrt devices
 * Integration of the tools and drivers into OpenWrt
-* Design of a moonitoring environment that builds upon the approaches of XDP and eBPF
+* Design of a monitoring environment that builds upon the approaches of XDP and eBPF
 * Description of different use cases that leverage the capabilities of XDP/eBPF on OpenWrt devices
 * Implementation of a dedicated use case that demonstrates the benefits of the XDP/eBPF
 
@@ -58,8 +58,8 @@ The goal of this project is, to realize traffic monitoring and classification me
 
 ##### Coding Period
 
-* Evaluation of XDP/eBPF on different hardwarew plattforms such as x86, ARM, and MIPS
-* Implementation of different XDP and eBPF approches
-* Implementation of differnet user space tools as loader
+* Evaluation of XDP/eBPF on different hardware platforms such as x86, ARM, and MIPS
+* Implementation of different XDP and eBPF approaches
+* Implementation of different user space tools as loader
 * Evaluation of the use case such as exporting a traffic matrix for further analysis
 * Demonstration of the benefits

@@ -40,7 +40,7 @@ tags:
 
 Voctoweb is the software behind media.ccc.de and used for distributing video recordings of a lot of events. We forked their repo to set up our own video portal, [media.freifunk.net](https://media.freifunk.net). As there was only one user of this software for years, content pages and templates are mixed with the business logic.
 
-Goal of this project should be: We're able to set up a new instance of voctoweb and add our own contents, designs, templates and other customizations. When the projects is finished we have a document on how to get your own, independant and customized instance.
+Goal of this project should be: We're able to set up a new instance of voctoweb and add our own contents, designs, templates and other customizations. When the projects is finished we have a document on how to get your own, independent and customized instance.
 
 It may be hard to split the original project in a first step. But if we find a way to make it easy for others to customize the installation, that doesn't matter.
 

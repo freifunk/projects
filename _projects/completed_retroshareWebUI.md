@@ -41,7 +41,7 @@ Missing components are the following:
 ##### PREPARATION/BONDING
 
 * get familiar with the Retroshare network
-* understand how GXS works. A white paper is available here: https://hal.inria.fr/hal-01617423
+* understand how GXS works. A white paper is available here: https://inria.hal.science/hal-01617423
 * discuss possible options with the developers
-* we only recruit applicants who made relevants pull requests to the project before the selection period begins. Ask the devs (retroshare.project@gmail.com) for the key to the dev Tor node, and meet them in the dev forum/chat *before* the project application period starts.
+* we only recruit applicants who made relevant pull requests to the project before the selection period begins. Ask the devs (retroshare.project@gmail.com) for the key to the dev Tor node, and meet them in the dev forum/chat *before* the project application period starts.
 

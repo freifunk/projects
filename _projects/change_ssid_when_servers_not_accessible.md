@@ -22,7 +22,7 @@ mentors:
     github: smoe
 requirements:
 - Communication skills to discuss best implementation
-- An overview on how mordern UNIX works 
+- An overview on how modern UNIX works
 - Talent to understand the current code base
 tags:
 - tag 1

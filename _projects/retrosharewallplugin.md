@@ -57,7 +57,7 @@ This is to be discussed with the developers.
 ##### PREPARATION/BONDING
 
 * get familiar with the Retroshare network
-* understand how GXS works. A white paper is available here: https://hal.inria.fr/hal-01617423
+* understand how GXS works. A white paper is available here: https://inria.hal.science/hal-01617423
 * discuss possible options with the developers
 * we only recruit applicants who made relevant pull requests to the project before the selection period begins. Ask for the key to the dev Tor node (retroshare.project@gmail.com) and meet the devs in the dev forum/chat rooms.
 

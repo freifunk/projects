@@ -1,7 +1,7 @@
 ---
-name: "LibreMesh Cable Purpose Autodection"
+name: "LibreMesh Cable Purpose Autodetection"
 desc: "For the router to detect if you are connecting a client, another router, an internet connection, and to configure itself accordingly at runtime"
-markdown: libremesh-cable-purpose-autodection.md
+markdown: libremesh-cable-purpose-autodetection.md
 collaborating_projects:
   - libremesh
   - altermundi

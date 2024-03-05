@@ -84,7 +84,7 @@ There are already some ideas for improvements:
 
 Get in touch with us to talk about potential projects we can derive from this idea. You're also invited to check out the software projects and try to get them running.
 
-You are free to define the scope with your proposal, so it will be possible to do that project as a full-time (350 hours) or a hafl-time(175 hours) project. It is also possible to split that idea up into several projects.
+You are free to define the scope with your proposal, so it will be possible to do that project as a full-time (350 hours) or a half-time(175 hours) project. It is also possible to split that idea up into several projects.
 
 ### Community bonding
 

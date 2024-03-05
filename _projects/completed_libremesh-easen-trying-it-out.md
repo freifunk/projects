@@ -1,6 +1,6 @@
 ---
 name: "Try LibreMesh without having a router"
-desc: "Ease the installation of a virtual environemt to try libremesh out"
+desc: "Ease the installation of a virtual environment to try libremesh out"
 requirements:
  - "Knowledge or interest in containerization an virtualization tools, such as docker"
 difficulty: "medium"
@@ -48,5 +48,5 @@ As of today, LibreMesh nodes can be set up in a virtual environment using QEMU a
 ##### GSOC 2022 FINAL
 
 * Adding entry "Try it out" to libremesh.org web site.
-* Continuous Integration to keep newcommers using latest released versions. 
+* Continuous Integration to keep newcomers using latest released versions.
 * Document what can be done with the virtual network.

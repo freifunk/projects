@@ -30,7 +30,7 @@ collaborating_projects:
 ---
 
 Create overview of OpenWrt supported devices to simplify user choice of
-aquicreing new devices.
+acquiring new devices.
 
 #### Milestones
 

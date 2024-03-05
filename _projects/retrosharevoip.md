@@ -41,7 +41,7 @@ This project can be a "175 hours" project for a sufficiently skilled developer.
 
 #### Milestones
 
-* find a suitable cross-plaform video codec
+* find a suitable cross-platform video codec
 * handle auto-adjustment of bandwidth for video/sound with proper priority handling to avoid gaps
 * implement proper GUI device selection and notifications
 

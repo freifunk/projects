@@ -43,7 +43,7 @@ Accordingly, the participant will first integrate the board into the OpenWrt env
 
 * [1] https://coral.ai/products/pcie-accelerator
 * [2] https://openwrt.org/
-* [3] http://trac.gateworks.com/wiki/TPU
+* [3] https://trac.gateworks.com/wiki/TPU
 * [4] https://coral.ai/docs/edgetpu/models-intro
 
 

@@ -5,7 +5,7 @@ requirements:
  - "The applicant needs to have understanding of networking in mesh networks."
 difficulty: "high"
 size: "350 hours"
-status: open
+status: disabled
 issues:
  - "https://github.com/libremesh/lime-packages/issues/261"
  - "https://github.com/libremesh/lime-packages/issues/244"

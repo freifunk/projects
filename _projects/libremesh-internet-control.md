@@ -5,7 +5,7 @@ collaborating_projects:
   - LibreMesh
   - Pirania
 difficulty: medium
-status: open
+status: disabled
 initiatives:
   - GSoC 2024
 size: 350 hours

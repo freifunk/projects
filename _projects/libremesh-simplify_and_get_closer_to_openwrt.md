@@ -1,6 +1,6 @@
 ---
-name: ""
-desc: ""
+name: "Simplify LibreMesh and get it closer to OpenWrt"
+desc: "Replace some tools developed or just used in LibreMesh with the OpenWrt's counterpart, for stability and quality. Also, develop a light version of LibreMesh more suited for smaller communities."
 requirements:
  - "Understanding of Linux system administration"
  - "Understanding of networking in Linux systems"

@@ -13,8 +13,10 @@ issues:
  - https://github.com/libremesh/lime-packages/issues/596
  - https://github.com/libremesh/lime-packages/pull/631
  - https://github.com/libremesh/lime-packages/issues/468
+developers_involved:
+- Ilario
 mentors:
-- name: Javier
+- name: Javier Jorge
   contact:
     github: javierbrk 
     email: javierbrk@gmail.com
@@ -22,7 +24,7 @@ initiatives:
  - GSoC
  - GSoC 2025
 tags:
- - LibreMesg
+ - LibreMesh
  - Babel
  - VLAN
  - Batman-adv
@@ -47,14 +49,14 @@ The communication with mentors and LibreMesh community is absolutely necessary f
 
 Some tasks have already been identified, and should be analyzed in the project. More tasks could be identified during the process.
 
-###### Tasks for getting closer to OpenWrt (first goal)
+##### Tasks for getting closer to OpenWrt (first goal)
 
 **Replace deferrable-reboot with watchcat.** Within the José de la Quintana network community, several tools have been developed over the years. Between them, [deferrable-reboot](https://github.com/libremesh/lime-packages/tree/master/packages/deferrable-reboot) is a tool decreasing the need of maintenance of the network, simply rebooting the devices when they lose internet connectivity. This simple solution clearly will not fix real fundamental network issues, but will help in decreasing the annoyance caused by undetected and not-yet-fixed stability issues. Inside OpenWrt, a similar tool named [watchcat](https://openwrt.org/docs/guide-user/advanced/watchcat) has been created, and could be used for replacing deferrable-reboot.
 
 **Replacing dnsmasq with odhcpcd.** LibreMesh is using [dnsmasq](https://thekelleys.org.uk/dnsmasq/doc.html) (also) as a DHCP server, while OpenWrt is using [odhcpcd](https://openwrt.org/docs/techref/odhcpd) by default. The migration towards odhcpcd involves checking whether odhcpcd has all the required features, understanding how to use them, and adapting LibreMesh to using them. A reference ticket with already some information can be seen here:
 * ["Replace dnsmasq by odhcpd"](https://github.com/libremesh/lime-packages/issues/294)
 
-###### Tasks for simplifying LibreMesh (second goal)
+##### Tasks for simplifying LibreMesh (second goal)
 
 **Removing VLAN from Babel interfaces.** LibreMesh creates one VLAN interface on top of each physical interface specifically for [Babel](https://www.irif.fr/~jch/software/babel/) routing protocol. This is not needed, decreases the maximum transmission unit (MTU) and increases the complexity of LibreMesh. There are two relevant tickets with some information on this: 
 * ["Lets remove unneded vlans from protocol interfaces"](https://github.com/libremesh/lime-packages/issues/581)
@@ -66,32 +68,27 @@ Some tasks have already been identified, and should be analyzed in the project. 
 
 #### Milestones
 
-##### GSOC COMMUNITY BONDING
-**May 8 - June 1 Community Bonding Period**
+##### May 8 - June 1 Community Bonding Period
 
 The applicant is expected to:
 * buy or gather somehow at least 3 LibreMesh-compatible routers and install a pre-compiled LibreMesh firmware image on them. At least one router model should have a switch that is DSA-supported within OpenWrt. At least one router should not be supported yet by DSA in OpenWrt.
 * deploy [LibreMesh in a virtual environment](https://github.com/libremesh/lime-packages/pull/938/files#diff-bbac40d9e7464512614594a7c71e02cc4a28c0489fb6b0c38e846b8527a14ccb).
 * compile a [LibreMesh firmware image using the BuildRoot method](https://libremesh.org/development.html#compiling_libremesh_from_source_code).
 
-##### GSOC MIDTERM
-
-**June 2 - July 14 First work period**
+##### June 2 - July 14 First work period
 
 * Analyze the already identified actions and select the ones that seems feasible and easiest to implement.
 * Start implementing them while testing the results on a real testing network composed by at least 3 routers.
 
-**July 14 MID TERM EVALUATION**
+##### July 14 MID TERM EVALUATION
 
-##### GSOC FINAL
-
-**July 14 - September 1 Second work period**
+##### July 14 - September 1 Second work period
 
 * Identify new actions that help with simplifying LibreMesh or to get it closer to OpenWrt. Write them down as [issues on the lime-packages repository](https://github.com/libremesh/lime-packages/issues).
 * Complete the implementation of the selected actions and test various network configuration to make sure that the solution is solid.
 * Propose the changes as one or more pull requests on the [lime-packages repository](https://github.com/libremesh/lime-packages/).
 
-**September 1 FINAL EVALUATION**
+##### September 1 FINAL EVALUATION
 
 
 

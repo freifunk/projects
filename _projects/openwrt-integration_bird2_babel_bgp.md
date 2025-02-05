@@ -36,7 +36,7 @@ The project's proposal consists on developing OpenWrt's integration with bird2 t
 
 #### Context
 
-Years ago, Eloi Casó successfully participated in the [2014 edition of Google Summer of Code](https://www.google-melange.com/archive/gsoc/2014/orgs/freifunk/projects/eloicaso.html) to improve integration of Bird with OpenWrt. The code was retired on 2023 because bird1 [reached end of life in 31 Dec 2023](http://trubka.network.cz/pipermail/bird-users/2023-June/017008.html), see commit [fa136b7](https://github.com/openwrt/routing/commit/fa136b70dfb29595083353f168d3b6c4df1d8e6e).
+Years ago, Eloi Carbó successfully participated in the [2014 edition of Google Summer of Code](https://www.google-melange.com/archive/gsoc/2014/orgs/freifunk/projects/eloicaso.html) to improve integration of Bird with OpenWrt. The code was retired on 2023 because bird1 [reached end of life in 31 Dec 2023](http://trubka.network.cz/pipermail/bird-users/2023-June/017008.html), see commit [fa136b7](https://github.com/openwrt/routing/commit/fa136b70dfb29595083353f168d3b6c4df1d8e6e).
 
 Bird version 2 comes also with Babel mesh routing protocol support. The Babel Routing Protocol (RFC6126) is a loop-avoiding distance-vector routing protocol that is robust and efficient both in ordinary wired networks and in wireless mesh networks.
 

@@ -60,5 +60,3 @@ The objective of this project is to investigate the use of Deep Q Networks (DQN)
 * Use the data from real-world tests to fine-tune and optimize the DQN-based RA algorithm.
 * Present a demo to highlight the potential performance improvements using the DQN-based RA algorithm. 
 * Provide comprehensive source code and project documentation for future reference.
-
-

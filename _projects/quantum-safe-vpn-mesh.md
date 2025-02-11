@@ -9,7 +9,7 @@ difficulty: high
 status: open
 initiatives:
 - GSoC 2025
-issues:
+issues: []
 size: 350 hours
 markdown: quantum-safe-vpn-mesh.md
 mentors:

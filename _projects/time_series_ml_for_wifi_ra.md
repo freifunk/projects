@@ -32,7 +32,7 @@ tags:
 - OpenWrt
 ---
 
-Rate Adaptation (RA) plays an important role in deciding the performance of a WiFi link. As WiFi operates within the limited and unlicensed ISM band, it is highly prone to interference. Newer standards of IEEE 802.11 offer faster Modulation and Coding Scheme (MCS) rates, higher bandwidth and more spatial stream, increasing the number of possible transmission configurations. However, efficiently navigating this growing search space for optimal rate selection remains a challenge. To address this challenge, we leverage data-driven machine learning techniques, such as LSTMs, to navigate the search space efficiently. Analyzing RA traces from a real rural ISP network could help us learn which data rates perform well and which do not across diverse environments. The access points run OpenWrt OS, based on Linux, with the ORCA API for monitoring frame transmissions and control of RA parameters. The details of the API and the trace format has been provided under `Resources for Proposal`.
+Rate Adaptation (RA) plays an important role in deciding the performance of a WiFi link. As WiFi operates within the limited and unlicensed ISM band, it is highly prone to interference. Newer standards of IEEE 802.11 offer faster Modulation and Coding Scheme (MCS) rates, higher bandwidth and more spatial stream, increasing the number of possible transmission configurations. However, efficiently navigating this growing search space for optimal rate selection remains a challenge. To address this challenge, we leverage data-driven machine learning techniques, such as LSTMs, to navigate the search space efficiently. Analyzing RA traces from a real rural ISP network could help us learn which data rates perform well and which do not across diverse environments. The access points run OpenWrt OS, based on Linux, with the ORCA API for monitoring frame transmissions and control of RA parameters. The details of the API and the trace format has been provided under Resources for Proposal.
 
 This project is positioned as a research initiative, exploring the following key questions:
 
@@ -46,7 +46,8 @@ The optimisation challenge in RA is framed as selecting the optimal data rate fr
 
 * [IEEE 802.11 Rate Adaptation](https://ieeexplore.ieee.org/document/8455115)
 * [ORCA API Paper](https://www.researchgate.net/publication/386449314_Open-source_Resource_Control_API_for_real_IEEE_80211_Networks/)
-* [Inferring ORCA Trace Lines](https://github.com/SupraCoNeX/orca/blob/main/docs/orca_uapi.md) | [ORCA Trace Snippet](https://docs.google.com/document/d/1yHOazOl7mSlatdCMbFmy5c0YRtnqVTxUP2NkpvzmPEk/edit?usp=sharing)
+* [Inferring ORCA Trace Lines](https://github.com/SupraCoNeX/orca/blob/main/docs/orca_uapi.md)
+* [ORCA Trace Snippet](https://docs.google.com/document/d/1yHOazOl7mSlatdCMbFmy5c0YRtnqVTxUP2NkpvzmPEk/edit?usp=sharing)
 
 #### Milestones
 

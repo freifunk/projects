@@ -14,13 +14,13 @@ size: 350 hours
 markdown: time_series_ml_for_wifi_ra.md
 mentors:
 - name: thuehn
-    contact:
-      github: thuehn
-      email: thomas.huehn@evernet-eg.de
+  contact:
+    github: thuehn
+    email: thomas.huehn@evernet-eg.de
 - name: prashiddhath
-    contact:
-      github: prashiddhath
-      email: prashiddhad.thapa@gmail.com
+  contact:
+    github: prashiddhath
+    email: prashiddhad.thapa@gmail.com
 requirements:
 - Python [asyncio, tensorflow, numpy/pandas,s matplotlib, scikit-learn]
 - Linux

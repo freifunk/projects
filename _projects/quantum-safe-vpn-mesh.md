@@ -18,7 +18,7 @@ mentors:
     github: aparcar
     email: mail@aparcar.org
     other_chat_options:
-    - matrix: @aparcar:matrix.org
+    - https://matrix.to/#/@aparcar:matrix.org
 requirements:
 - OpenWrt
 - C

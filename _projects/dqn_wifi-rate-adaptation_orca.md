@@ -1,11 +1,10 @@
 ---
-name: Deep Q Network-based Rate Adaptation for IEEE 802.11ac Networks
-desc: Implementation and performance evaluation of reinforcement learning algorithm based on the Deep Q Network approach for MCS rate adaptation in real WiFi networks
-collaborating_projects
+name: "Deep Q Network-based Rate Adaptation for IEEE 802.11ac Networks"
+desc: "Implementation and performance evaluation of reinforcement learning algorithm based on the Deep Q Network approach for MCS rate adaptation in real WiFi networks"
+collaborating_projects:
   - openwrt.org
 developers_involved: []
 difficulty: tough
-status: open
 initiatives:
   - GSoC
   - GSoC 2025

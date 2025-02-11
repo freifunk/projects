@@ -1,25 +1,17 @@
 ---
 name: Deep Q Network-based Rate Adaptation for IEEE 802.11ac Networks
-
 desc: Implementation and performance evaluation of reinforcement learning algorithm based on the Deep Q Network approach for MCS rate adaptation in real WiFi networks
-
 collaborating_projects:
   - openwrt.org
-
 developers_involved: []
-
 difficulty: tough
-
 status: open
-
 initiatives:
   - GSoC
   - GSoC 2025
-
 issues: []
-
 size: 350 hours
-
+status: open
 markdown: dqn_wifi-rate-adaptation_orca.md
 mentors:
 - name: thuehn
@@ -28,17 +20,14 @@ mentors:
 - name: Sankalp Prakash Pawar
   contact:
 	github: pawarsp
-
 requirements:
   - "Python"
   - "Linux"
-
 tags:
   - WiFi rate adaptation
   - GSoC 2025
   - OpenWrt
   - mac80211
-
 ---
 
 Conventional Wi-Fi rate adaptation (RA) algorithms rely on heuristics from older IEEE 802.11 amendments, which can struggle in denser, more complex networks. As Wi-Fi environments become more crowded, machine learning techniques, especially reinforcement learning (RL), are gaining attention for their potential to improve rate selection [3].

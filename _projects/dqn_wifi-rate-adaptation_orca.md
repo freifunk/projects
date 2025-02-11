@@ -16,10 +16,10 @@ markdown: dqn_wifi-rate-adaptation_orca.md
 mentors:
 - name: thuehn
   contact:
-	github: thuehn
+    github: thuehn
 - name: Sankalp Prakash Pawar
   contact:
-	github: pawarsp
+    github: pawarsp
 requirements:
   - "Python"
   - "Linux"

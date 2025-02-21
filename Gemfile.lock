@@ -1,7 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    Ascii85 (1.1.0)
+    Ascii85 (1.1.1)
     addressable (2.8.7)
       public_suffix (>= 2.0.2, < 7.0)
     afm (0.2.2)
@@ -31,7 +31,7 @@ GEM
     fiber-local (1.0.0)
     forwardable-extended (2.6.0)
     hashery (2.1.2)
-    html-proofer (5.0.9)
+    html-proofer (5.0.10)
       addressable (~> 2.3)
       async (~> 2.1)
       nokogiri (~> 1.13)
@@ -77,8 +77,8 @@ GEM
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.4.0)
-    mini_portile2 (2.8.6)
-    nokogiri (1.16.4)
+    mini_portile2 (2.8.8)
+    nokogiri (1.16.8)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
     pathutil (0.16.2)
@@ -112,7 +112,7 @@ GEM
     unicode-display_width (1.8.0)
     webrick (1.9.1)
     yell (2.2.2)
-    zeitwerk (2.6.13)
+    zeitwerk (2.6.18)
 
 PLATFORMS
   ruby

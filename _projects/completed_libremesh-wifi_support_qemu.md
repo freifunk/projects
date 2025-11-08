@@ -5,7 +5,7 @@ collaborating_projects:
 - LibreMesh
 - OpenWrt
 difficulty: medium
-status: open
+status: completed
 initiatives:
 - GSoC 2025
 - GSoC

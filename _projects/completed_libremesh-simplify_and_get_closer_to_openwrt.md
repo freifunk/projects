@@ -6,7 +6,7 @@ requirements:
  - "Understanding of networking in Linux systems"
 difficulty: "medium"
 size: "350 hours"
-status: open
+status: completed
 issues:
  - https://github.com/libremesh/lime-packages/issues/294
  - https://github.com/libremesh/lime-packages/issues/581

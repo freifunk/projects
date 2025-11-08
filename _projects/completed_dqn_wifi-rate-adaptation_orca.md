@@ -10,7 +10,7 @@ initiatives:
   - GSoC 2025
 issues: []
 size: 350 hours
-status: open
+status: completed
 markdown: dqn_wifi-rate-adaptation_orca.md
 mentors:
 - name: thuehn

@@ -1,7 +1,7 @@
 ---
 collaborating_projects:
   - freifunk
-desc: "Develop components to apply customizations to the default VocToWeb"
+desc: "Migrate media.freifunk.net to the latest VocToWeb version with automated Docker deployment and customization overlay"
 developers_involved:
   - andibraeu
 difficulty: medium
@@ -9,7 +9,7 @@ size: "175 hours"
 status: open
 initiatives:
   - GSoC
-  - GSoC 2025
+  - GSoC 2026
 issues:
   - "https://github.com/freifunk/voctoweb/issues/2"
 markdown: voctoweb-split-content-and-logic.md
@@ -24,38 +24,60 @@ mentors:
     github: christian-draeger
     email: ""
     other_chat_options: []
-name: "VocToWeb: Install and apply customizations"
+name: "VocToWeb: Migration and Docker Deployment with Customizations"
 requirements:
   - "Analyzing and coding"
-  - "refactoring, migrations"
-  - "ruby, html, javascript"
+  - "Docker, Docker-Compose"
+  - "CI/CD, GitHub Actions"
+  - "Ruby, HTML, JavaScript"
 tags:
-  - GSoC2025
-  - json
+  - GSoC2026
+  - docker
   - ruby
   - web
   - voctoweb
   - video
+  - deployment
 ---
 
-Voctoweb is the software behind media.ccc.de and used for distributing video recordings of a lot of events. We forked their repo to set up our own video portal, [media.freifunk.net](https://media.freifunk.net). As there was only one user of this software for years, content pages and templates are mixed with the business logic.
+VocToWeb is the software behind [media.ccc.de](https://media.ccc.de) and is used for distributing video recordings of many events. We forked the repository years ago to set up our own video portal at [media.freifunk.net](https://media.freifunk.net).
 
-Goal of this project should be: We're able to set up a new instance of voctoweb and add our own contents, designs, templates and other customizations. When the projects is finished we have a document on how to get your own, independent and customized instance.
+## Motivation
 
-It may be hard to split the original project in a first step. But if we find a way to make it easy for others to customize the installation, that doesn't matter.
+We want to improve our deployment workflow and make it easier to stay up-to-date with upstream development:
+
+* Our current setup is based on a fork, which makes it harder to incorporate new features and improvements from [voc/voctoweb](https://github.com/voc/voctoweb)
+* We want to streamline the deployment process and reduce manual intervention
+* Customizations (design, templates, code) should be managed separately from the upstream codebase to simplify future upgrades
+
+## Project Goals
+
+The goal of this project is to modernize our VocToWeb deployment with the following objectives:
+
+1. **Migration**: Upgrade media.freifunk.net to the current VocToWeb version from upstream
+2. **Customization System**: Develop a mechanism to manage our customizations (design, templates, minor code changes) separately, which get applied during build or deployment
+3. **Docker Deployment**: Set up automated deployment using Docker-Compose without manual intervention
+4. **CI/CD Pipeline**: Implement a GitHub Actions pipeline for automatic builds and deployments
+5. **Documentation**: Create comprehensive documentation for future updates and maintenance
 
 ## Milestones
 
 ### Preparation/Bonding
 
-* Install your own instance of voctoweb and try to understand how it works
-* identify the components to be used for customizations
+* Set up a local VocToWeb installation using Docker (following upstream documentation)
+* Study the VocToWeb codebase and understand its architecture
+* Document all current customizations used on media.freifunk.net
+* Analyze the differences between our fork and the current upstream version
+* Create a migration plan
 
-### Coding period
+### Coding Period
 
-* merge upstream changes
-* identify the general and the customizable parts
-* find ways to apply the customizable parts to a default installation
-* update media.freifunk.net, maybe use docker based components
-* improve documentation on installing voctoweb
-* add documentation on how to apply and develop customizable parts
+* Perform the migration to the current VocToWeb version
+* Develop a customization overlay mechanism (e.g., via Docker volume mounts, build-time file overrides, or a separate customization layer)
+* Create a production-ready Docker-Compose setup for media.freifunk.net
+* Implement CI/CD pipeline using GitHub Actions for automated builds and deployments
+* Test the deployment process thoroughly
+* Write documentation on:
+  * How to update VocToWeb to newer upstream versions
+  * How to develop and apply customizations
+  * How the automated deployment works

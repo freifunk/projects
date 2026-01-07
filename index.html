@@ -19,7 +19,7 @@
   <script src="resources/vendors/angular-sanitize/angular-sanitize.js"></script>
   <script src="resources/vendors/showdown/showdown.js"></script>
   <script src="resources/vendors/markdown/markdown.js"></script>
-  <script>var baseUrl = '{{ site.baseurl }}';</script>
+  <script>var baseUrl = '{{ site.baseurl }}';var copyPrompt = '{{ site.copy_prompt | default: "" }}';</script>
   <script src="resources/js/app.js"></script>
   <!-- Import coala module directive-->
   <script src="resources/js/directives/projects.js"></script>

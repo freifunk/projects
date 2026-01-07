@@ -104,5 +104,29 @@
         };
     });
 
+    // Copy hook: Append AI-friendly prompt when copying project content
+    document.addEventListener('copy', function(e) {
+        // Skip if no prompt configured
+        if (typeof copyPrompt === 'undefined' || !copyPrompt) return;
+        
+        var selection = window.getSelection();
+        if (!selection.rangeCount) return;
+        
+        var container = selection.getRangeAt(0).commonAncestorContainer;
+        // Only apply to content within the project modal
+        while (container && container !== document) {
+            if (container.classList && container.classList.contains('modal-content')) {
+                var selectedText = selection.toString();
+                if (selectedText.trim().length > 0) {
+                    var aiPrompt = "\n\n" + copyPrompt;
+                    e.clipboardData.setData('text/plain', selectedText + aiPrompt);
+                    e.preventDefault();
+                }
+                break;
+            }
+            container = container.parentNode;
+        }
+    });
+
 })();
 

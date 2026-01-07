@@ -315,6 +315,13 @@ angular.module('coala')
             $scope.currentProject = project
 
             $(document).ready(function () {
+                // Set hidden AI prompt text when modal opens
+                if (typeof copyPrompt !== 'undefined' && copyPrompt) {
+                    var hiddenPrompt = document.getElementById('ai-prompt');
+                    if (hiddenPrompt) {
+                        hiddenPrompt.textContent = copyPrompt;
+                    }
+                }
                 $('.modal').modal('open');
             });
 
@@ -328,6 +335,13 @@ angular.module('coala')
         self.showProjectOnArrowClick = function (project) {
 
             $scope.currentProject = project
+            // Set hidden AI prompt text when modal opens
+            if (typeof copyPrompt !== 'undefined' && copyPrompt) {
+                var hiddenPrompt = document.getElementById('hidden-ai-prompt');
+                if (hiddenPrompt) {
+                    hiddenPrompt.textContent = copyPrompt;
+                }
+            }
             mval = encodeURIComponent(project["name"].split(' ').join('_').toLowerCase());
             $location.url('?project=' + mval + ($scope.lang ? '&lang=' + $scope.lang : ''))
             $scope.$evalAsync();

@@ -5,3 +5,5 @@ order: 5
 We act as an umbrella organization, so there are a bunch of possibilities to contact mentors. Most of our mentors can be contacted via GitHub. Please try to contact your mentor first!
 
 If you're in doubt or don't know the project location, ask our [international mailing list](https://lists.freifunk.net/mailman/listinfo/wlanware-freifunk.net) or at [matrix](https://matrix.to/#/!DmXQbxcSxGYgXDYrBs:bau-ha.us?via=bau-ha.us). Please keep in mind that people there don't know the projects or your ideas in detail!
+
+**Please note:** Our mentors are volunteers who contribute their time and expertise on a voluntary basis in their free time. They do not receive any payment for their mentoring work.

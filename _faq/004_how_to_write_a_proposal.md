@@ -11,3 +11,4 @@ We have some notes you should keep in mind for your proposal:
 * Refine and break down your milestones (maybe into stories), also together with the mentor.
 * Try to estimate what stories you can work on within the GSoC period. Please keep in mind that we have 3 kinds of projects: large with 350 hours, medium with 175 hours and small with 90 hours over 10 weeks.
 * Use our application template to introduce yourself and describe your project. The resulting document you should upload to the Google Summer of Code program website.
+* If there are some beginner issues or tasks, you can use them as a showcase

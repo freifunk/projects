@@ -36,7 +36,7 @@ GEM
     fiber-storage (1.0.1)
     forwardable-extended (2.6.0)
     hashery (2.1.2)
-    html-proofer (5.2.2)
+    html-proofer (5.2.3)
       addressable (~> 2.3)
       async (~> 2.1)
       benchmark (~> 0.5)
